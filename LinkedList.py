@@ -2,8 +2,6 @@ class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
-
-
 class SinglyLinkedList:
     def __init__(self):
         self.head = None
@@ -26,7 +24,7 @@ class SinglyLinkedList:
 
     def add_between(self, data, index):
         temp = self.head
-        for i in range(index - 1):
+        for i in range(index -1):
             temp = temp.next
 
         new = Node(data)
@@ -61,9 +59,6 @@ class SinglyLinkedList:
             print(temp.data, end=" -> ")
             temp = temp.next
         print("None")
-
-
-# Main class
 class Main:
     lst = SinglyLinkedList()
 
